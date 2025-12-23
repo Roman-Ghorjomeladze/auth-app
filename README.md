@@ -26,7 +26,7 @@ Request-scoped logging with trace IDs is used to make debugging across services 
 ## Prerequisites
 
 -   Git
--   Node.js >= 20 and npm (or Yarn)
+-   Node.js >= 20 and npm
 -   Docker
 
 ---
@@ -37,7 +37,7 @@ Running the following script will install all dependencies in the root directory
 
 ```bash
 # from project root
-git clone <repo-url> .
+git clone https://github.com/Roman-Ghorjomeladze/auth-app.git .
 npm run install:all
 ```
 
@@ -47,9 +47,9 @@ You need to create environment files before running the project.
 
 There are three example environment files:
 
-frontend/.env.example
-backend/api-gateway/.env.example
-backend/user-service/.env.example
+-   frontend/.env.example
+-   backend/api-gateway/.env.example
+-   backend/user-service/.env.example
 
 Copy each example file and create a corresponding .env file next to it:
 
