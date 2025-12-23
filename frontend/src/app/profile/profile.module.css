@@ -1,0 +1,114 @@
+.container {
+	height: 100dvh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #38bdf8 100%);
+}
+
+.card {
+	width: 100%;
+	max-width: 520px;
+	padding: 36px 32px;
+	background: #ffffff;
+	border-radius: 16px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 6px;
+	color: #0f172a;
+}
+
+.subtitle {
+	font-size: 14px;
+	color: #475569;
+	margin-bottom: 24px;
+}
+
+.field {
+	margin-bottom: 16px;
+}
+
+.field label {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	margin-bottom: 6px;
+	color: #334155;
+}
+
+.field input,
+.field textarea {
+	width: 100%;
+	padding: 10px 12px;
+	font-size: 14px;
+	border-radius: 8px;
+	border: 1px solid #e5e7eb;
+	outline: none;
+}
+
+.field textarea {
+	resize: vertical;
+	min-height: 80px;
+}
+
+.field input:disabled {
+	background: #f1f5f9;
+	color: #64748b;
+}
+
+.saveButton {
+	width: 100%;
+	margin-top: 12px;
+	padding: 14px;
+	font-size: 15px;
+	font-weight: 600;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	color: #ffffff;
+	background: #2563eb;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.saveButton:hover {
+	background: #1d4ed8;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.saveButton:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
+.loading {
+	padding: 32px;
+	font-size: 16px;
+}
+
+.avatarWrapper {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	overflow: hidden; /* 👈 REQUIRED */
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.avatar {
+	object-fit: cover;
+}
+
+.errorBox {
+	margin-top: 12px;
+	padding: 10px 12px;
+	font-size: 14px;
+	border-radius: 8px;
+	background: #fee2e2;
+	color: #991b1b;
+	border: 1px solid #fecaca;
+}

@@ -1,0 +1,71 @@
+.container {
+	height: 100dvh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #38bdf8 100%);
+}
+
+.card {
+	width: 100%;
+	max-width: 420px;
+	padding: 36px 32px;
+	background: #ffffff;
+	border-radius: 16px;
+
+	/* 👇 This makes the card clearly visible */
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.08);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.title {
+	font-size: 28px;
+	font-weight: 700;
+	color: #0f172a;
+	margin-bottom: 8px;
+}
+
+.subtitle {
+	font-size: 14px;
+	color: #475569;
+	margin-bottom: 28px;
+}
+
+.googleButton {
+	width: 100%;
+	padding: 14px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+
+	border-radius: 10px;
+	border: 1px solid #e5e7eb;
+	background-color: #ffffff;
+	color: #111827;
+
+	transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.05s ease;
+}
+
+.googleButton:hover {
+	background-color: #f8fafc;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.googleButton:active {
+	transform: translateY(1px);
+}
+
+.googleIcon {
+	display: block;
+}
